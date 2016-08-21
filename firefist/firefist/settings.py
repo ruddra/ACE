@@ -34,7 +34,7 @@ CUSTOM_APPS = [
     'core',
     'reporting',
     'dms',
-    'ace'
+    'administration'
 ]
 
 
