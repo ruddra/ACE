@@ -25,5 +25,8 @@ class FirefistCore(models.model, FirefistMixin):
 
 class FirefistDocumentCore(FirefistCore):
     version = models.CharField(required=True)
-    meta_data = models.CharField(required=False, null=True), max_length=255
+    meta_data = models.CharField(required=False, null=True, max_length=255)
     comment = models.CharField(required=False, null=True, max_length=255)
+
+    class Meta:
+        abstruct = True
